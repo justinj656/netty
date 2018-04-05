@@ -22,6 +22,7 @@ package io.netty.channel;
  */
 public class ThreadPerChannelEventLoop extends SingleThreadEventLoop {
 
+    // TIP: Add a abundant field to avoid force cast
     private final ThreadPerChannelEventLoopGroup parent;
     private Channel ch;
 
